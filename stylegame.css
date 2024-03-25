@@ -70,6 +70,14 @@ body {
     }
 }
 
+.lil-image {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .hole {
     height: 50px;
     width: 50px;
@@ -80,6 +88,20 @@ body {
     background-size: 50px;
     background-image: url("mole.jpg");
 }
+
+h1 {
+    color: #4B0082; /* Purple color */
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #800080; /* Darker shade of purple */
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 .enemy {
     background-size: 50px;

@@ -7,7 +7,7 @@ table {
     overflow: hidden; /* Hide overflowing content within rounded corners */
 }
 h1 {
-    color: #fffdfe; /* Pink color for the text */
+    color: #ff0080; /* Pink color for the text */
     font-family: "Comic Sans MS", cursive;
     font-size: 60px; /* Adjust the font size as needed */
     font-weight: bold; /* Make the text bold */
@@ -69,42 +69,5 @@ tr:hover {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .rectangle {
-    position: absolute;
-    width: 4000px;
-    height: 100px;
-    background-color: #ff9eb5;
-  }
-  
-  .top-left {
-    top: 0;
-    left: 0;
-    animation: moveTopLeft 2s ease forwards;
-  }
-  
-  .bottom-right {
-    bottom: 0;
-    right: 0;
-    animation: moveBottomRight 2s ease forwards;
-  }
-  
-  @keyframes moveTopLeft {
-    from {
-      transform: translate(-100%, -100%);
-    }
-    to {
-      transform: translate(0, 0);
-    }
-  }
-  
-  @keyframes moveBottomRight {
-    from {
-      transform: translate(100%, 100%);
-    }
-    to {
-      transform: translate(0, 0);
-    }
   }
   

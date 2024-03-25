@@ -1,0 +1,33 @@
+body {
+    background-color: #800080; /* Purple */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app-launcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.app-launcher a {
+    text-decoration: none;
+    color: white;
+}
+
+.app-launcher img {
+    width: 100px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.app-launcher img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+.app-launcher span {
+    display: block;
+    color: white;
+}

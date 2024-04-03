@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
             <td>${rowNumber}</td>
             <td><input type="checkbox" id="checkbox_${rowNumber}" class="checkbox"></td>
             <td id="chapter_${rowNumber}" class="editable">Chapter ${rowNumber}</td>
-            <td id="numQs_${rowNumber}" class="editable">0</td>
             <td id="lectureDuration_${rowNumber}" class="editable">0</td>
         `;
         tableBody.appendChild(newRow);

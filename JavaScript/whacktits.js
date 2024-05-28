@@ -3,11 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const startButton = document.getElementById("startButton");
     const endButton = document.getElementById("endButton");
     const scoreDisplay = document.getElementById("score");
-    const timerDisplay = document.getElementById("timer");
 
-    let timer;
     let score = 0;
-    let countdown;
     let moleInterval;
     let gameOver = true;
 
@@ -55,25 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
         gameOver = false;
         score = 0;
         scoreDisplay.textContent = `Score: ${score}`;
-        timer = 60;
-        timerDisplay.textContent = `Time: ${timer}s`;
-
         startButton.disabled = true;
+        document.getElementById('endButton').classList.remove('hidden');
         endButton.disabled = false;
-
-        countdown = setInterval(() => {
-            timer--;
-            timerDisplay.textContent = `Time: ${timer}s`;
-
-            if (timer <= 0) {
-                clearInterval(countdown);
-                gameOver = true;
-                alert(`Game Ended!\nNumber of boobies squeezed: ${score}`);
-                startButton.disabled = false;
-                endButton.disabled = true;
-            }
-        }, 1000);
-
         moleInterval = setInterval(() => {
             if (!gameOver) comeout();
         }, 1000);
@@ -82,15 +63,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function endGame() {
-        clearInterval(countdown);
         clearInterval(moleInterval);
         gameOver = true;
         alert(`Game Ended!\nNumber of boobies squeezed: ${score}`);
         score = 0;
         timer = 60;
         scoreDisplay.textContent = `Score: ${score}`;
-        timerDisplay.textContent = `Time: ${timer}s`;
         startButton.disabled = false;
+        document.getElementById('endButton').classList.add('hidden');
         endButton.disabled = true;
     }
 

@@ -1,9 +1,11 @@
 body {
-    background-color: #f0e6f6; /* Light purple */
+    background-color: #edcfff; /* Light purple */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 0;
 }
 
 .game-info {
@@ -14,32 +16,36 @@ body {
     margin: 20px;
 }
 
-#startButton,
-#endButton {
-    margin-bottom: 20px;
-    padding: 10px 20px; /* Adjusted padding for better button appearance */
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #6a1b9a; /* Purple */
-    color: #fff; /* White text */
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+#startButton, #endButton {
     border: none;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    background: none;
+    overflow: hidden; /* Ensures the image doesn't overflow the button */
+    transition: all 0.1s ease; /* Smooth transition for the hover effect */
 }
 
 #startButton:hover,
 #endButton:hover {
-    background-color: #9c27b0; /* Light purple on hover */
+    transform: scale(1.2); /* Scale the image to 120% on hover */
 }
 
 .game-container {
-    background-color: #e1bee7; /* Lighter purple */
+    background: linear-gradient(to bottom, #e270f6, #7c238c); /* Lighter purple */
     display: grid;
-    grid-template-columns: repeat(3, 160px);
-    gap: 10px;
-    border: 2px solid #673ab7; /* Dark purple */
-    padding: 20px;
-    border-radius: 10px;
+    grid-template-columns: repeat(3, auto);
+    gap: 50px;
+    border: 10px solid rgb(64, 64, 64);
+    padding: 30px;
+    border-radius: 18px;
 }
 
 .hole {
@@ -60,23 +66,52 @@ body {
     background-image: url("../Resources/whacktits.enemy.jpg");
 }
 
+@media only screen and (min-width: 600px) { /* for pc */
+#img2,#img3 {
+    position: fixed;
+    height: 100%; /* Maintain aspect ratio */
+    width: auto; /* Adjust size as needed */
+}
+#img2{
+    left: 4px;
+}
+#img3{
+    right: 4px;
+}
+}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 480px) {  /* for phone */
+    #img2,#img3 {
+       display: none;
+    }
+    #whacktitlogo {
+        width: 100%;
+        height: auto;
+    }
+    .buttons{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+    }
+    #playimg, #exitimg{
+        width: 100%;
+        height: auto;
+    }
     .game-container {
         width: 80%;
-        gap: 10px;
-        padding: 5%;
-        grid-template-columns: repeat(3, 38%);
+        height: auto;
+        gap: auto;
+        padding: auto;
+    }
+    .tutorial {
+        width: 80%;
     }
 }
 
-.lil-image {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 20%; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-}
 
 .hole {
     height: 50px;
@@ -89,21 +124,15 @@ body {
     background-image: url("../Resources/whacktits.mole.jpg");
 }
 
-h1 {
-    color: #4B0082; /* Purple color */
-    text-align: center;
-    margin-top: 20px;
-}
-
-p {
-    color: #800080; /* Darker shade of purple */
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
 .enemy {
     background-size: 50px;
     background-image: url("../Resources/whacktits.enemy.jpg");
+}
+
+.tutorial {
+    margin: 25px;
+    padding: 15px;
+    background-color: #ebaaf7;
+    border: 6px solid rgb(64, 64, 64);
+    border-radius: 18px;
 }

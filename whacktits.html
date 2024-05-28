@@ -9,14 +9,19 @@
     <title>Whac-Em-Tits</title> 
 </head> 
   
-<body>  <h1>Whac-Em-Tits</h1>
+<body>  <img src="Resources/whactits.logo.png" alt="Whac-Em-Tits" id="whacktitlogo">
    
     <div class="game-info"> 
         <div id="score">Score: 0</div> 
-        <div id="timer">Time: 60s</div> 
     </div> 
-    <button id="startButton">Start Game</button> 
-    <button id="endButton" disabled>End Game</button> 
+    <div class="buttons">   
+        <button id="startButton">
+            <img src="Resources/whactits.playbuttton.png" alt="playbuttton" id="playimg">
+        </button> 
+        <button id="endButton" class="hidden" disabled>
+            <img src="Resources/whactits.exitbutton.png" alt="endButton" id="exitimg">
+        </button>
+    </div> 
     <div class="game-container"> 
         <div class="hole" id="hole1"></div> 
         <div class="hole" id="hole2"></div> 
@@ -27,12 +32,14 @@
         <div class="hole" id="hole7"></div> 
         <div class="hole" id="hole8"></div> 
         <div class="hole" id="hole9"></div> 
-    </div>  <p align="center">Welcome to the Whac-Em-Tits!<br> The objective is simple: 
+    </div>
+    <div class="tutorial"><b>Welcome to the Whac-Em-Tits!</b><br> The objective is simple: 
         whack the tits as they show up on the screen, <br>but be 
         careful not to suck my dick. Click the "Start Game" 
-        button to begin.</p>
+        button to begin.</div>
         <p style="font-family: bold 700;">Freaky players of all time : Harshit and Leo👅</p>
-    <img src="Resources/whacktits.lil.png" class="lil-image">
+    <img src="Resources/whacktitsimg3.png" id="img3">
+    <img src="Resources/whacktitsimg2.png" id="img2">
     <script src="JavaScript/whacktits.js"></script> 
 </body> 
   

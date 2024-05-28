@@ -1,0 +1,72 @@
+body {
+    background-image: url('../Resources/launcher.bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #0000003a;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    background-color: #ffffff3f;
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px 0 0 15px;
+}
+
+button {
+    background-color: #ffffff3f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+}
+
+button:hover {
+    background-color: #ffffff7c;
+}
+
+.logo {
+    float: left;
+    height: 38px;
+    width: auto;
+    padding: 10px 18px;
+}
+
+#shortcut-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.shortcut {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+#add-shortcut {
+    margin-top: 20px;
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Chrome Homepage</title>
+    <link rel="stylesheet" href="CSS/launcher.css">
+</head>
+<body>
+ <header>
+    <a href="launcher.html"><img src="./Resources/launcher.logo.png" alt="Logo" class="logo"></a>
+        <div class="search-container">
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <input type="text" name="q" placeholder="Search Google or type a URL" autofocus>
+                <button type="submit"><img src="./Resources/launcher.searchicon.jpg" style="height:16px; width:auto;" alt="Search"></button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div id="shortcut-container">
+            <!-- Shortcuts will be dynamically added here -->
+        </div>
+        <button id="add-shortcut">Add Shortcut</button>
+    </main>
+    <script src="./JavaScript/launcher.js"></script>
+</body>
+</html>

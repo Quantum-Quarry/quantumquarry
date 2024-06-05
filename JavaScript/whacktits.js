@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const scoreDisplay = document.getElementById("score");
 
     let score = 0;
-    let moleInterval;
     let gameOver = true;
+    let moletimeout;
+    let delay;
 
     function comeout() {
         holes.forEach(hole => {
@@ -55,19 +56,26 @@ document.addEventListener("DOMContentLoaded", function () {
         startButton.disabled = true;
         document.getElementById('endButton').classList.remove('hidden');
         endButton.disabled = false;
-        moleInterval = setInterval(() => {
-            if (!gameOver) comeout();
-        }, 1000);
-
-        console.log("Game started");
+        delay = 1000;
+        startInterval();
+    }
+    function startInterval() {
+        if (gameOver) {
+            return;
+        }
+        comeout();
+        if(delay >=310){
+        delay -=10; // Decrease delay by 5%
+        }
+        else {delay=310;}
+        moletimeout = setTimeout(startInterval, delay); // Schedule the next interval
     }
 
     function endGame() {
-        clearInterval(moleInterval);
+        clearTimeout(moletimeout);
         gameOver = true;
         alert(`Game Ended!\nNumber of boobies squeezed: ${score}`);
         score = 0;
-        timer = 60;
         scoreDisplay.textContent = `Score: ${score}`;
         startButton.disabled = false;
         document.getElementById('endButton').classList.add('hidden');

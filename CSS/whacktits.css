@@ -1,4 +1,4 @@
-body {
+body,#gameplay /*,#homepage*/{
     background-color: #edcfff; /* Light purple */
     display: flex;
     flex-direction: column;
@@ -136,3 +136,23 @@ body {
     border: 6px solid rgb(64, 64, 64);
     border-radius: 18px;
 }
+/* #gameplay, #homepage{display: none;}
+
+.h_buttons{
+    gap: 15px;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-top: 30%;
+}
+#h_startButton, #h_endButton {
+    border: none;
+    background: none;
+    overflow: hidden; /* Ensures the image doesn't overflow the button
+    transition: all 0.1s ease; /* Smooth transition for the hover effect
+    margin-top: 12px;
+}
+
+#h_startButton:hover,
+#h_endButton:hover {
+    transform: scale(1.2); /* Scale the image to 120% on hover
+}*/

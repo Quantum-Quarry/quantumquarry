@@ -9,10 +9,13 @@
     <title>Whac-Em-Tits</title> 
 </head> 
   
-<body>
+<body><div id="overlay" class="hidden overlay"><div class="lostpopup">Game Over! <br>YOU SUCKED MY DICK! <p id="scoreDisplay">Score: </p> <img src="Resources/whactits.lost.gif" alt="womp womp" id="lostimg">
+</div></div>
     <div id="gameplay"> <!--Main game view-->
         <img src="Resources/whactits.logo.png" alt="Whac-Em-Tits" id="whacktitlogo">
     <div class="game-info"> 
+        <img src="Resources/whactits.active.gif" id="gameactive" class="hidden">
+        <img src="Resources/whactits.inactive.gif" id="gameinactive">
         <div id="score">Score: 0</div> 
     </div> 
     <div class="buttons">   

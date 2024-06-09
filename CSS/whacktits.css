@@ -121,14 +121,17 @@ body,#gameplay /*,#homepage*/{
 
 .mole {
     background-size: 50px;
-    background-image: url("../Resources/whacktits.mole.jpg");
+    background-image: url("../Resources/whacktits.mole.gif");
 }
 
 .enemy {
     background-size: 50px;
-    background-image: url("../Resources/whacktits.enemy.jpg");
+    background-image: url("../Resources/whacktits.enemy.gif");
 }
-
+#gameactive, #gameinactive {
+    height: 6em;
+    width: auto;
+}
 .tutorial {
     margin: 25px;
     padding: 15px;
@@ -156,3 +159,41 @@ body,#gameplay /*,#homepage*/{
 #h_endButton:hover {
     transform: scale(1.2); /* Scale the image to 120% on hover
 }*/
+
+#overlay { position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.54); /* Adjust the alpha value (last parameter) to control transparency */
+    z-index: 9999;
+}
+
+.lostpopup {
+    background: linear-gradient(to bottom, #f4b8ff, #c66cd5); /* Lighter purple */
+    border: 10px solid rgb(64, 64, 64);
+    border-radius: 18px;
+    margin: auto; /* This centers the div horizontally */
+    color: #5e1589;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    position: fixed; /* This keeps the div centered even when scrolling */
+    top: 50%; /* Positioning at 50% from the top */
+    left: 50%; /* Positioning at 50% from the left */
+    transform: translate(-50%, -50%); /* Centers the div both horizontally and vertically */
+}
+
+#lostimg{
+    width: 100%;
+    height: auto;
+}
+
+.score{
+    background-color: #5e1589;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 8px;
+    width: 50%;
+}

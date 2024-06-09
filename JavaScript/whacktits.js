@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const startButton = document.getElementById("startButton");
     const endButton = document.getElementById("endButton");
     const scoreDisplay = document.getElementById("score");
+    var overlay = document.getElementById('overlay');
 
     let score = 0;
     let gameOver = true;
@@ -40,7 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function handleEnemyClick() {
         if (!gameOver) {
             gameOver = true;
-            alert('Gamer Over! You accidentally sucked my cock hahaxD!');
+            document.getElementById('overlay').classList.remove('hidden');
+            overlay.addEventListener('click', toggleOverlay);
+            document.getElementById('scoreDisplay').innerHTML = "Number of  boobs squeezed: " + score;
             endGame();
         }
     }
@@ -55,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
         scoreDisplay.textContent = `Score: ${score}`;
         startButton.disabled = true;
         document.getElementById('endButton').classList.remove('hidden');
+        document.getElementById('gameactive').classList.remove('hidden');
+        document.getElementById('gameinactive').classList.add('hidden');
         endButton.disabled = false;
         delay = 1000;
         startInterval();
@@ -64,22 +69,26 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
         comeout();
-        if(delay >=310){
-        delay -=10; // Decrease delay by 5%
+        if(delay >=650){
+        delay -=6;
         }
-        else {delay=310;}
+        else {delay=650;}
         moletimeout = setTimeout(startInterval, delay); // Schedule the next interval
     }
 
     function endGame() {
         clearTimeout(moletimeout);
         gameOver = true;
-        alert(`Game Ended!\nNumber of boobies squeezed: ${score}`);
         score = 0;
         scoreDisplay.textContent = `Score: ${score}`;
+        document.getElementById('gameinactive').classList.remove('hidden');
+        document.getElementById('gameactive').classList.add('hidden');
         startButton.disabled = false;
-        document.getElementById('endButton').classList.add('hidden');
         endButton.disabled = true;
+    };
+    function toggleOverlay() {
+        document.getElementById('overlay').classList.add('hidden');
+        overlay.removeEventListener('click', toggleOverlay);
     }
 
     startButton.addEventListener("click", startGame);

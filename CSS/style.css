@@ -1,33 +1,68 @@
-body {
-    background-color: #800080; /* Purple */
-    margin: 0;
+*{
+    box-sizing: border-box;
     padding: 0;
-    font-family: Arial, sans-serif;
-}
+    margin: 0;
+    font-family: raleway;
+    color: white;
+   /* border: 1px solid yellow; */
 
-.app-launcher {
+}
+body{
+    background: #121321;
+}
+.navbar {
+    position:sticky;
+    top: 12px;
+    margin-top: 56px;
+    margin-left: 32px;
+    margin-bottom: 12px;
+    width: calc(100% - 64px); /* 16px left margin + 16px right margin */
+    height: 4em;
+    border-radius: 10px;
+    background-color: #4b25745a;
+    color:#ffffff;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: space-between;
+    backdrop-filter: blur(4px);
+}
+.logoelements{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#logo {
+    height: 3em;
+    margin-bottom: 3px;
+    margin-left: 24px;
+}
+.logotxt {
+    margin-left: 1em;
+    font-family: lobster;
+}
+.linkelements{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.link{
+    margin-left: 1em;
+    
+}
+:last-child.link{
+    margin-right: 2em;
 }
 
-.app-launcher a {
-    text-decoration: none;
-    color: white;
-}
 
-.app-launcher img {
-    width: 100px;
-    margin: 10px;
-    border-radius: 20px;
-}
 
-.app-launcher img:hover {
-    transform: scale(1.1); /* Increase size on hover */
-}
-.app-launcher span {
-    display: block;
-    color: white;
-}
+/* colour palette (light to dark)
+#9F71C3
+#924DBF
+#7337A0
+#4B2574
+#10032A
+*/

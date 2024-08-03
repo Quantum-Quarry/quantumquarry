@@ -58,12 +58,12 @@ body,#gameplay /*,#homepage*/{
 
 .mole {
     background-size: 150px;
-    background-image: url("../Resources/whacktits.mole.jpg");
+    background-image: url("../assets/whacktits.mole.jpg");
 }
 
 .enemy {
     background-size: 150px;
-    background-image: url("../Resources/whacktits.enemy.jpg");
+    background-image: url("../assets/whacktits.enemy.jpg");
 }
 
 @media only screen and (min-width: 600px) { /* for pc */
@@ -121,12 +121,12 @@ body,#gameplay /*,#homepage*/{
 
 .mole {
     background-size: 50px;
-    background-image: url("../Resources/whacktits.mole.gif");
+    background-image: url("../assets/whacktits.mole.gif");
 }
 
 .enemy {
     background-size: 50px;
-    background-image: url("../Resources/whacktits.enemy.gif");
+    background-image: url("../assets/whacktits.enemy.gif");
 }
 #gameactive, #gameinactive {
     height: 6em;
@@ -139,27 +139,6 @@ body,#gameplay /*,#homepage*/{
     border: 6px solid rgb(64, 64, 64);
     border-radius: 18px;
 }
-/* #gameplay, #homepage{display: none;}
-
-.h_buttons{
-    gap: 15px;
-    padding: 0;
-    margin-bottom: 15px;
-    margin-top: 30%;
-}
-#h_startButton, #h_endButton {
-    border: none;
-    background: none;
-    overflow: hidden; /* Ensures the image doesn't overflow the button
-    transition: all 0.1s ease; /* Smooth transition for the hover effect
-    margin-top: 12px;
-}
-
-#h_startButton:hover,
-#h_endButton:hover {
-    transform: scale(1.2); /* Scale the image to 120% on hover
-}*/
-
 #overlay { position: fixed;
     top: 0;
     left: 0;

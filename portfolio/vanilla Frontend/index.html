@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla HTML CSS JavaScript</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid lime; */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .navbar .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 6rem;
+            padding: 0 120px;
+            position: sticky;
+            top: 0;
+            background-color: #f4f4f4
+        }
+        h1 {
+            font-size: 5rem;
+            margin-top: 50px;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-top: 20px;
+            width: 60%;
+        }
+        .hero-page {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: calc(100vh - 6rem);
+            overflow: hidden;
+        }
+        .hero-content {
+            width: 80%;
+            padding: 140px;
+
+        }
+        .hero-image img{
+            width: auto;
+            height: 80vh;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 3rem;
+            margin-right: 120px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .about {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 120px;
+            background-color: #e2e2e2;
+        }
+        .about-image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 50px;
+            margin-top: 100px;
+
+        }
+        .about-content {
+            margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+            height: calc(100vh - 6rem);
+        }
+        .skills {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #dcdcdc;
+            border-radius: 10px;
+        }
+        .skills .cardset {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 300px;
+            height: 180px;
+            overflow: scroll;
+            scrollbar-width:none;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        .doing {
+            background-color: #bebebe;
+            border: 2px solid #333;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Ts #001
+        </div>
+        <ul class="menu">
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">social</a></li>
+        </ul>
+    </div>
+    <div class="hero-page" id="homepage">
+        <div class="hero-content">
+            <h1>wsup gng</h1>
+            <h2>Ts my vanilla Frontend</h2>
+            <p>
+                I really want that j*b, so im making ts portfolio. yall dont need to read ts.
+                I could've just used lorem ispum bs but I wanna rant. So the thing is, ts website
+                gonna be part of my main lowk hard website. and in that website imma link ts. This is
+                just to showcase my vanilla frontend. that is html, css aand JavaScript. 
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.pinimg.com/736x/4f/e4/f5/4fe4f5fbdf635ee60f258f5892c13f9d.jpg" alt="broken image" >
+        </div>
+    </div>
+    <div class="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="sad.jpg" alt="sad image" >
+            </div>
+            <div>
+                <h1>bout me</h1>
+                <h2>who tf is this guy?</h2>
+                <p style="width: 80%;">
+                    alr so gng hear me out, im tryna be as brief as pssible here, but yall know im goated so ts gonna be long.
+                    So throw back to 2023 HSC boards. that was kinda my entry in computer science. I wont say my jr college was the best.
+                    but it got me exposed to all these new concepts about computer science. I wont go into detail regarding what I learnt,
+                    I'll prolly make some cards on what skills I've ahead. So anyways I enjoyed my 12th grade syllabus very much. 
+                    that syllabus def not built for avg changu kana thakur student. Imagine learning assembly in 12th like GEEEEEEEEeeeeezzzz.
+                    I used to write my own machine codes in 8085 or 6 idr properly. anyways, thts it let's move on to the next section.
+                </p>
+            </div>
+        </div>
+        <div class="skills">
+            <h1>"skills"</h1>
+            <h2>(lmao look at this dude)</h2>
+            <div class="cardset">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>HyperText Markup Language</p>
+                </div>
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Cascading Style Sheets</p>
+                </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Programming language for the web</p>
+                </div>
+                <div class="card">
+                    <h3>React</h3>
+                    <p>JavaScript library for building user interfaces</p>
+                </div>
+                <div class="card">
+                        <h3>Git | Github</h3>
+                        <p>Version control and collaboration platform</p>
+                </div>
+                <div class="card">
+                    <h3>assembly</h3>
+                    <p>Low-level programming language for computers</p>
+                </div>
+                <div class="card">
+                    <h3>Python</h3>
+                    <p>High-level programming language for general-purpose programming</p>
+                </div>
+                <div class="card">
+                    <h3>C++</h3>
+                    <p>General-purpose programming language with object-oriented features</p>
+                </div>
+                <div class="card">
+                    <h3>Java</h3>
+                    <p>Object-oriented programming language for building cross-platform applications</p>
+                </div>
+                <div class="card">
+                    <h3>Data Structure</h3>
+                    <p>Organizing and storing data efficiently</p>
+                </div>
+                <div class="card">
+                    <h3>AutoCad</h3>
+                    <p>Computer-aided design software for creating 2D and 3D designs</p>
+                </div>
+                <div class="card doing">
+                    <h3>Doing MERN Stack</h3>
+                    <p>MongoDB, Express.js, React, Node.js - Full-stack JavaScript development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 My Portfolio. All rights reserved. idk what that means lol</p>
+        <p>Made with ❤️ by Piyush</p>
+        <p>Contact: <a href="mailto:pibaspam@gmail.com" style="color: white;">pibaspam@gmail.com</a></p>
+    </div>
+    <script>
+        console.log("Hello from JavaScript!");
+    </script>
+</body>
+</html>

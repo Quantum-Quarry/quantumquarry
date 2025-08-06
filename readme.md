@@ -17,7 +17,8 @@ This is my basic portfolio which I made within 2-3 hours. It only demonstrates m
 ### 3. [Aspira Projects](https://quantum-quarry.github.io/quantumquarry/Aspira/index.html)
 Aspira showcases our team’s versatile project portfolio, focusing on a variety of design and development solutions.
 
-### 4. [Whack 'Em Tits](https://quantum-quarry.github.io/quantumquarry/whacktits.html) (NSFW Warning)
+### 4. [Whack 'Em Tits](https://quantum-quarry.github.io/quantumquarry/whacktits.html)
+(NSFW Warning)
 A unique and adult-oriented interactive game. Please note this project contains NSFW content. Viewer discretion is advised.
 ---
 

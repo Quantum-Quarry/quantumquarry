@@ -11,12 +11,14 @@ Welcome to the Quantum Quarry projects repository! Below are some live demo link
 ### 1. [Quantum Quarry](https://quantum-quarry.github.io/quantumquarry/index.html)
 This is our primary project showcasing the Quantum Quarry platform. Dive in to explore innovative features and our approach to modern web solutions.
 
-### 2. [Whack 'Em Tits](https://quantum-quarry.github.io/quantumquarry/whacktits.html) (NSFW Warning)
-A unique and adult-oriented interactive game. Please note this project contains NSFW content. Viewer discretion is advised.
+### 2. [Portfolio Demo](https://quantum-quarry.github.io/quantumquarry/portfolio/index.html) 
+This is my basic portfolio which I made within 2-3 hours. It only demonstrates my fundamental frontend skills.
 
 ### 3. [Aspira Projects](https://quantum-quarry.github.io/quantumquarry/Aspira/index.html)
 Aspira showcases our team’s versatile project portfolio, focusing on a variety of design and development solutions.
 
+### 4. [Whack 'Em Tits](https://quantum-quarry.github.io/quantumquarry/whacktits.html) (NSFW Warning)
+A unique and adult-oriented interactive game. Please note this project contains NSFW content. Viewer discretion is advised.
 ---
 
 ### How to Use
